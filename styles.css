@@ -377,11 +377,10 @@ section.references{
   position: absolute;
   overflow-x: scroll;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 24px;
+  font-size: 36px;
   color: #ffffff;
-  text-shadow: 
-  -2px 2px 0 #000,
-  2px 2px 0 #000,
-  2px -2px 0 #000,
-  -2px -2px 0 #000;
+}
+
+li{
+  margin: 100px 0;
 }
