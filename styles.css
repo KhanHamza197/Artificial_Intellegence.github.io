@@ -118,7 +118,12 @@ a.active, a:hover{
 /*Formats the footer for all pages*/
 footer {
   background-color: #ffffff;
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 
+  -2px 2px 0 #000,
+  2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000;
   font-size: 20px;
   text-align: center;
 }
@@ -277,13 +282,13 @@ div.event h4{
 .problems {
   background: url(images/problems_background.jpg);
 	background-size: cover;
-	top:80px; bottom: 0px;
+	top:0px; bottom: 80px;
 	margin: 0;
   padding: 25vh 0;
 	height: 100%;
 	width: 100%;
 	background-repeat: repeat;
-	position: absolute;
+	position: relative;
 	overflow-x: scroll;
   display: flex;
   color: #ffffff;
@@ -337,7 +342,7 @@ iframe {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*Wraps text around images*/
+/*Wraps text around it*/
 .about_what {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
