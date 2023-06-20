@@ -1,0 +1,382 @@
+/*Navigation Bar Formatting*/
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/*Defines main font*/
+body{ 
+  font-family: monserrat;
+}
+
+/*Formate navbar design*/
+nav{
+  background: #072a46;
+  height: 80px;
+  width: 100%;
+}
+
+/*Removes Logo*/
+label.logo{
+  color: white;
+  font-size: 0px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+/* Creates the format of the navbar buttons*/
+nav ul{
+  float: right;
+  margin-right: 0px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover{
+  background: #3d8fce;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 0px;
+    padding-left: 5px;
+  }
+  
+  nav ul li a{
+    font-size: 16px;
+
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2C3E50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+  }
+
+  a:hover, a.active{
+    background: none;
+    color: #0082E6;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/*Formats the footer for all pages*/
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Homepage Formatting*/
+section.index{
+  background: url(images/home_background.jpg);
+  background-size: cover;
+  top:0px; bottom: 0px;
+  background-repeat: repeat;
+  position: relative;
+  overflow-x: scroll;
+}
+
+/*Formats image icon*/
+.profile-large {
+  width: 700px;
+  height: 450px;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+}
+
+/*Formats main header on home page*/
+.header {
+  padding: 40px;
+  text-align: center;
+  font-family: "Lucida Grande", monospace;
+  color: #060120;
+  margin: 30px;
+  font-size: 80px;
+}
+
+/*Daily Uses Formatting*/
+section.daily_uses{
+  background: url(images/daily_uses_background.jpg);
+  background-size: cover;
+  top:80px; bottom: 0px;
+  background-repeat: repeat;
+  position: absolute;
+  overflow-x: scroll;
+}
+
+/*Formats heading on daily uses page*/
+h1 {
+  padding: 40px;
+  text-align: center;
+  font-family: "Lucida Grande", monospace;
+  color: #ffffff;
+  margin: 30px;
+  font-size: 80px;
+}
+
+/*Formats table with all of the daily uses*/
+.use_table{
+  border-collapse: collapse;
+  table-layout:fixed;
+  font-family: "Courier New";
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.use_table th {
+  border: 10px solid #ffffff;
+}
+
+.use_table td {
+  border: 10px solid #ffffff;
+}
+
+/*History Page Formatting*/
+section.history{
+  background: url(images/history_background.jpg);
+  background-size: cover;
+  top:80px; bottom: 0px;
+  width: 100vw;
+  background-repeat: repeat;
+  position: absolute;
+  overflow-x: scroll;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 
+  -2px 2px 0 #000,
+  2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Formats line to be timeline*/
+section.timeline {
+  margin: 90px auto;
+  width: 50vw;
+  border-left: 2px solid #ccc;
+  padding: 0 20px 0 30px;
+}
+
+/*Formats all events*/
+div.event{
+  background-color: #000000;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: #ffffff;
+  border: 3px solid #8ccbe9;
+  line-height: 1.7;
+  position: relative;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+div.event:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 3px solid #dddddd;
+  position: absolute;
+  top: 10px;
+  left: -40px
+}
+
+div.event:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #dddddd transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -17px;
+  top: 10px;
+}
+
+div.event h2{
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: merienda;
+}
+
+div.event h3{
+  margin: 0;
+  font-family: poppins;
+}
+
+div.event h4{
+  margin: 0;
+  text-align: center;
+  font-family: poppins;
+}
+
+/*Problems Formatting*/
+.problems {
+  background: url(images/problems_background.jpg);
+	background-size: cover;
+	top:80px; bottom: 0px;
+	margin: 0;
+  padding: 25vh 0;
+	height: 100%;
+	width: 100%;
+	background-repeat: repeat;
+	position: absolute;
+	overflow-x: scroll;
+  display: flex;
+  color: #ffffff;
+}
+
+/*Formats Problems box*/
+.cover {
+  width: 900px;
+  height: 400px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.box {
+  margin: 10px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:#ffffff;
+  font-size: 24px;
+}
+
+/*Formats the youtube videos*/
+iframe {
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+}
+
+
+/*About Formatting*/
+.about_ai {
+	background: url(images/about_ai_background.png);
+	background-size: cover;
+	top:80px; bottom: 0px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-repeat: repeat;
+	position: absolute;
+	overflow-x: scroll;
+  color: #ffffff;
+  font-size: 35px;
+  text-shadow: 
+  -2px 2px 0 #000,
+  2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Wraps text around images*/
+.about_what {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.about_text {
+	padding: 5vw;
+  align-items: center;
+  justify-content: center;
+	
+}
+
+.about_img{
+	padding: 5vw;
+	height: 80vh;
+	width: 55vw;
+  align-items: center;
+  justify-content: center;
+}
+
+/*References Formatting*/
+section.references{
+  background: url(images/reference_background.jpg);
+  background-size: cover;
+  top:80px; bottom: 0px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
+  position: absolute;
+  overflow-x: scroll;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 
+  -2px 2px 0 #000,
+  2px 2px 0 #000,
+  2px -2px 0 #000,
+  -2px -2px 0 #000;
+}

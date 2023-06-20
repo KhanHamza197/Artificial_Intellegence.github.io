@@ -1,0 +1,74 @@
+<!--Setup-->
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+    <head>
+        <meta charset= "utf-8">
+        <title>Artificial Intellegence</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styles.css">
+        <!--Accesses font awesome files-->
+		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    </head>
+
+    <body>
+        <!--Taskbar section-->
+		<nav>
+			<input type = "checkbox" id = "check">
+			<label for = "check" class = "checkbtn">
+				<i class = "fas fa-bars"></i>
+			</label>
+			<label class = "logo">Artificial Intellegence</label>
+            <!--Makes taskbar containing links to all other web pages-->
+			<ul>
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "about.html">About AI</a></li>
+				<li><a href = "history.html">History</a></li>
+				<li><a class = "active" href = "daily_uses.html">Daily Uses</a></li>
+				<li><a href = "problems.html">Problems</a></li>
+				<li><a href = "references.html">References</a></li>
+			</ul>
+		</nav>
+        <!--Main Section-->
+		<section class = "daily_uses">
+            <h1>Daily Uses</h1>
+			<!--Creates table with 3 columns, the topic, about the topic, and the image/iframe-->
+			<table class="use_table">
+				<tr>
+					<th>Artificial Intelligence Use</th>
+					<th>About</th>
+					<th>More</th>
+				</tr>
+				<tr>
+					<td>Gaming</td>
+					<td>Almost all games across the world have NPCs, or non playable characters. Many games, such as Mario, Legend of Zelda, and Elden Ring, exclusively have NPC characters you interact with. What makes these NPCs so fun is their AI. This ranges from having the NPCs attack you if you come near them, to having dialogues with you. Even board games now use AI. A great example of this is Chess, in which you can fight NPCs that are way better than the best chess player in the world.</td>
+					<td><iframe style="width: 400px; height: 560px;" src="https://www.chess.com/daily_puzzle" frameborder="0"></iframe></td>
+				</tr>
+				<tr>
+					<td>Search Engines</td>
+					<td>If you have ever used a search engine, you would notice after a few searches, you would start to get recommended things based off of what you previously wrote. This is the work of Artificial Intelligence adapting to your previous searches.</td>
+					<td><img width = 600 height = 400 src="images/search_engine.png" class = "table" alt="Search Engine Picture"></td>
+				</tr>
+                <tr>
+                    <td>Navigation</td>
+                    <td>Before navigation AI, you would have to use maps to find where you have to go. However with the new navigation apps with google maps, you will be shown the fastest route that takes into account traffic, route fees, accidents, and much more.</td>
+                    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.8337472222956!2d-79.32444118761887!3d43.75554907097689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d27042056add%3A0x9c632c18007a2c6a!2sVictoria%20Park%20Collegiate%20Institute!5e0!3m2!1sen!2sca!4v1687130690383!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                </tr>
+                <tr>
+                    <td>Streaming Services</td>
+                    <td>Just as Search Engines adapt to your previous searches, streaming services such as Netflix, Twitch, and Youtube, adapt to your preferences, displaying them in a recommended page.</td>
+                    <td><iframe width="552" height="311" src="https://www.youtube.com/embed/n3RKsY2H-NE" title="How Recommender Systems Work (Netflix/Amazon)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td>Chat Bots</td>
+                    <td>One of the newest ways AI is being applied is chat bots. Chat bots use AI to give you the most accurate possible response to any questions you might have regarding any topic. You could be wondering how to make pizza flavored ice cream, or how to insert chess into a website, chat bots can answer anything. Certain chatbots are used by websites to help guide users through experiences as well, such as the following chatbot.</td>
+                    <td><iframe src="https://chatbot.hellotars.com/conv/NJba4f/" style="width: 400px;height: 620px;box-shadow: 0 20px 80px rgba(0,0,0,.6);border-radius: 5px;overflow: hidden;border: none;"></iframe></td>
+                </tr>
+			</table>
+		</section>
+	</body>
+
+	<!--Footer containing copyright, html, and css validation-->
+	<footer>
+		&copy; 2023 Artificial Intelligence Website. All rights reserved.
+	</footer>
+</html>
